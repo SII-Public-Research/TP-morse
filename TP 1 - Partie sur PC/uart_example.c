@@ -72,7 +72,7 @@ int main() {
         printf("Error %i from tcsetattr: %s\n", errno, strerror(errno));
     }
 
-    unsigned char msg[] = { 0, 0, 10, 50, 100, 13, 'C', 'o', 'u', 'c', 'o', 'u', ' ', 'c', 'o', 'p', 'a', 'i', 'n', '\n' };
+    unsigned char msg[] = { 1, 0, 10, 50, 100, 13, 'C', 'o', 'u', 'c', 'o', 'u', ' ', 'c', 'o', 'p', 'a', 'i', 'n', '\n' };
     write(serial_port, msg, sizeof(msg));
     
 }
